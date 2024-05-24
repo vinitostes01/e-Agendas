@@ -1,4 +1,4 @@
-# Raspagem do e_Agendas em R
+# Raspagem do e-Agendas em R
 
 A raspagem de dados (ou web scraping) é uma técnica amplamente utilizada para extrair informações de websites de forma automatizada. No contexto do e-Agendas, uma plataforma que organiza e disponibiliza informações sobre compromissos e agendas públicas de diversos órgãos governamentais, a raspagem de dados pode ser uma ferramenta extremamente útil.
 
