@@ -91,4 +91,4 @@ O código final pode levar alguns minutos para concluir todas as requisições, 
 
 ![image](https://github.com/vinitostes01/e-Agendas/assets/89874338/f7bebe98-68e9-44a1-b6cd-694803f5f6ac)
 
-No final teremos 3 data.frames com dados consolidados, um com todos os orgãos e suas informaçãoes, um de todos os agentes que estão cadastrados no e-Agendas e um com todas os registros de agendas no site do e-Agendas. O código está disponível no 
+No final teremos 3 data.frames com dados consolidados, um com todos os orgãos e suas informaçãoes, um de todos os agentes que estão cadastrados no e-Agendas e um com todas os registros de agendas no site do e-Agendas. O código completo está disponível no meu [GitHub](https://github.com/vinitostes01/e-Agendas/blob/245c2c9a81737c7af7ed6e81962a4026198169d4/Coleta_e_Agendas.R). Um exemplo de cada uma das bases de dados também está disponível lá.
