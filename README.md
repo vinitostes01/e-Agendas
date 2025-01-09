@@ -34,6 +34,8 @@ Precisamos desse conjunto de dados para pegar o ID de cada orgão, esse ID é ne
 
 Agora iremos pegar os dados de cada agente de cada orgão, essas informações estão em uma URL em que é necessário apenas o código do orgão, com um looping for vamos pegar as informações de todos os agentes.
 ```{r}
+library(dplyr)
+
 # Criamos um data.frame vazio para juntar todos os agentes
 agentes = data.frame()
 for (i in 1:nrow(orgaos)) {
@@ -54,8 +56,6 @@ O data.frame agentes vai conter a informação de todos os agentes que existem n
 
 Por fim basta capturarmos a agenda de cada agente, usando um looping for vamos passar pot todos os agentes para capturar toda a agenda existente de cada agente.
 ```{r}
-library(dplyr)
-
 # Criamos um data.frame vazio para juntar todos os agentes
 agendas = data.frame()
 for (i in 1:nrow(agentes)) {
