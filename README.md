@@ -46,6 +46,7 @@ for (i in 1:nrow(orgaos)) {
   pagina_agentes = httr::GET(url_agentes) |> 
       content(as = "text", encoding = "UTF-8")
   pagina_agentes = jsonlite::fromJSON(pagina_agentes)
+  row.names(pagina_agentes) = NULL
   # Por fim juntamos todos os agentes em um data.frame
   agentes = rbind(agentes, pagina_agentes)
 }
