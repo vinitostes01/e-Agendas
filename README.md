@@ -46,9 +46,8 @@ for (i in 1:nrow(orgaos)) {
   pagina_agentes = httr::GET(url_agentes) |> 
       content(as = "text", encoding = "UTF-8")
   pagina_agentes = jsonlite::fromJSON(pagina_agentes)
-  row.names(pagina_agentes) = NULL
   # Por fim juntamos todos os agentes em um data.frame
-  agentes = rbind(agentes, pagina_agentes)
+  agentes = dplyr::bind_rows(agentes, pagina_agentes)
 }
 ```
 O data.frame agentes vai conter a informação de todos os agentes que existem no e-Agentes, alguns órgão não utilizam o e-Agendas e por isso não constará nenhum agente.
